@@ -1,42 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Xicwear</title>
+<title>DROP SHOP</title>
+
 <style>
+
 body{
 font-family: Arial;
-text-align:center;
-background:#f5f5f5;
+margin:0;
+background:#f2f4f8;
 }
 
 header{
-background:black;
+background:linear-gradient(90deg,#ff7a18,#ff3d3d);
 color:white;
+padding:25px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+nav{
+background:#222;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.products{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 padding:20px;
 }
 
 .product{
 background:white;
-padding:20px;
 margin:20px;
-border-radius:10px;
-display:inline-block;
+padding:20px;
+width:230px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
 }
+
+.product:hover{
+transform:scale(1.05);
+}
+
+.product img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+color:#ff3d3d;
+font-size:20px;
+font-weight:bold;
+}
+
+button{
+background:#ff3d3d;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#e32f2f;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Xicwear</h1>
-<p>Tienda oficial</p>
+DROP SHOP
+<p style="font-size:14px;">La mejor tienda online</p>
 </header>
 
+<nav>
+<a href="#">Inicio</a>
+<a href="#">Gadgets</a>
+<a href="#">Tecnología</a>
+<a href="#">Ofertas</a>
+</nav>
+
+<div class="products">
+
 <div class="product">
-<h2>Producto ejemplo</h2>
-<p>$19.99</p>
+<img src="https://via.placeholder.com/200">
+<h3>Lámpara LED RGB</h3>
+<p class="price">$19.99</p>
+<a href="checkout.html">
 <button>Comprar</button>
+</a>
 </div>
+
+<div class="product">
+<img src="https://via.placeholder.com/200">
+<h3>Mini Proyector HD</h3>
+<p class="price">$39.99</p>
+<a href="checkout.html">
+<button>Comprar</button>
+</a>
+</div>
+
+<div class="product">
+<img src="https://via.placeholder.com/200">
+<h3>Humidificador USB</h3>
+<p class="price">$14.99</p>
+<a href="checkout.html">
+<button>Comprar</button>
+</a>
+</div>
+
+</div>
+
+<footer>
+© 2026 DROP SHOP - Todos los derechos reservados
+</footer>
 
 </body>
 </html>
